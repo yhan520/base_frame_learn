@@ -27,3 +27,8 @@ logging:
 #user-service:
   #ribbon:
     #NFLoadBanancerRuleClassName: com.netflix.loadbalancer.RandomRule
+feign:
+  httpclient:
+    enabled: true
+    max-connections: 200
+    max-connections-per-route: 50
