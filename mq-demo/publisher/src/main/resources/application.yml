@@ -1,0 +1,10 @@
+logging:
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+spring:
+  rabbitmq:
+    addresses: localhost
+    port: 5672
+    virtual-host: /
+    username: yhan
+    password: yhan

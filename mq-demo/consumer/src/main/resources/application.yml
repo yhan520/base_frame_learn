@@ -1,0 +1,13 @@
+logging:
+  pattern:
+    dateformat: MM-dd HH:mm:ss:SSS
+spring:
+  rabbitmq:
+    password: yhan
+    addresses: localhost
+    port: 5672
+    username: yhan
+    virtual-host: /
+    listener:
+      simple:
+        prefetch: 1 #每次只分配一个消息给listener，listener处理完，才能再次分配
